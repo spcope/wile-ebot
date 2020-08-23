@@ -47,6 +47,10 @@ client.on("message", function(message) {
 	else if (command === "command" || command === "help") {
 		message.reply('The supported commands for this bot currently are: \n!trial <int>\n!dungeon <int>\n!arena <int>\nEx: !trial 8000');
 	}
+
+	else {
+		message.reply('Command not recognized. Try !help to find commands.');
+	}
 });
 
 client.login(config.BOT_TOKEN);
