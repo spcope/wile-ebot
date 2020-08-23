@@ -43,6 +43,10 @@ client.on("message", function(message) {
 
 		message.reply(`${payoutValues}`);
 	}
+
+	else if (command === "command" || command === "help") {
+		message.reply('The supported commands for this bot currently are: \n!trial <int>\n!dungeon <int>\n!arena <int>\nEx: !trial 8000');
+	}
 });
 
 client.login(config.BOT_TOKEN);
